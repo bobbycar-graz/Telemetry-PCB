@@ -1,1 +1,1 @@
-![This is an image](documentation/top_view.png)
+![This is an image](documentation/top_view_annotated.png)
