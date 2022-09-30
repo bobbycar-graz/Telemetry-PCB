@@ -23,12 +23,19 @@ There are 2 CAN bus connectors, pin-compatible with the boardcomputer PCB, and c
 - TPMP2359DJ DC-DC converter (up to 30V input, 3.3V output), so board can be powered by:
   - USB-C connector (5V) or
   - CAN bus (12V-15V)
+- TTL UART receive to receive log messages from the boardcomputer
 
 ### Use cases
 - Acquire data with onboard sensors and send it to the boardcomputer
   - GPS/GNSS time, position, speed, heading
   - temperature
-- Log measurements and CAN bus messages to the microSD card
+- Log data to the microSD card:
+   - GPS and temperature data
+   - CAN BUS messages
+   - LoRa messages
+   - ESP-NOW messages
+   - GPS-mapped Wi-Fi scan results
+   - UART log messages from the boardcomputer
 - GPS geofencing (slowdown/stop, notification to other Bobby-Cars)
 - Calibrate wheel circumference by comparing GPS speed with wheel speed
 - Send GPS position over LoRa so that:
